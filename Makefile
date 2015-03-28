@@ -10,6 +10,11 @@ push:
 receive:
 	git fetch origin
 	git reset --hard $(HEAD)
+	git clean -fdx
+	make all
 
 update: push
 	ssh $(SERVER) make -C $(workdir) receive HEAD=$(shell git rev-parse HEAD)
+
+all:
+	@:
