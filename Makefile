@@ -11,4 +11,4 @@ receive:
 	git reset --hard $(HEAD)
 
 update: push
-	ssh $(SERVER) make -C $(workdir) HEAD=$(shell git-rev-parse HEAD)
+	ssh $(SERVER) make -C $(workdir) receive HEAD=$(shell git rev-parse HEAD)
