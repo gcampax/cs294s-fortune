@@ -1,8 +1,8 @@
 REPO := $(notdir $(realpath .))
 
 SERVER = doge.stanford.edu
-gitdir = ~/cs294s/repos/$(REPO)
-workdir = \~/cs294s/web/$(REPO)
+gitdir = /home/giovanni/cs294s/$(REPO).git
+workdir = /var/www/html/cs294s/$(REPO)
 
 push:
 	git push $(SERVER):$(gitdir) master
