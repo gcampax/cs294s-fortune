@@ -1,10 +1,11 @@
 REPO := $(notdir $(realpath .))
 
 SERVER = doge.stanford.edu
-workdir = cs294s/repos/$(REPO)
+gitdir = ~/cs294s/repos/$(REPO)
+workdir = \~/cs294s/web/$(REPO)
 
 push:
-	git push origin
+	git push $(SERVER):$(gitdir) master
 
 receive:
 	git fetch origin
