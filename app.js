@@ -2,12 +2,12 @@
     var fortune;
 
     function currentFortune() {
-        return fortune.textContent;
+        return fortune.text();
     }
 
     function requestFortune() {
         $.when($.ajax('fortune.php', { dataType: 'text' })).then(function(data) {
-            fortune.textContent = data;
+            fortune.text(data);
         });
     }
 

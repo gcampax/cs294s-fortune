@@ -1,3 +1,8 @@
-/* This is where I would put my CSS
-   If I had one!
-*/
+.fortune-teller {
+    text-align: center;
+}
+
+.button-bar {
+    margin-right: auto;
+    margin-left: auto;
+}
